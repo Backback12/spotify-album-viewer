@@ -1,5 +1,5 @@
 # print("spotify external file loading")
-import requests
+# import requests
 from urllib import parse
 
 import os
@@ -69,8 +69,8 @@ if 'access_token' in parsedArgs:
     # User is authenticated!
     print("You're authenticated!")
 
-    x = requests.get('https://w3schools.com')   # not sure 
-    print(x.status_code)
+    # x = requests.get('https://w3schools.com')   # not sure 
+    # print(x.status_code)
 else:
     print("User is not yet authenticated")
 
