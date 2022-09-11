@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        <!--<script src="/dist/pyscript.js"></script>-->
+        <!--<script src="color-thief-2.3.2/dist/color-thief.js"></script>-->
+        
+        
+        
+        
+        <link rel="stylesheet" href="dist/styles.css" media="screen" />
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        
+        
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            </style>
+        
+        <title>Pico W Website</title>
+        
+        <py-env>
+            - requests
+        </py-env>
+        <py-script src="dist/spotify.py"></py-script>
+
+    </head>
+    <!--<div class="backk" onmousemove=showAllEvent()>This is back box</div>-->
+    <body>
+<py-script>
+from js import console
+
+def printPy(e):
+    console.log("LETS GOOOO")
+</py-script>
+        <h1>Spotify Album Stuff</h1>
+        <div>
+            <!--<a id=ResetButton href="https://alphaq13.github.io/Spotify-Data/"><button>Reset</button></a>-->
+            <a class='menu' id=ResetButton href="http://127.0.0.1:5500/index.html"><button>Reset</button></a>
+            <button onclick=updateAlbum()>Update Image</button>
+            <button id="AuthorizeButton" class="button" pys-onclick="authorizeUser" type="button">Authorize User</button>
+            <button id='test-py' pys-onclick="printPy" type="button">print py</button>
+        </div>
+        <div class="backk" pys-onmousemove="printPy">This is back box
+        <div class='background'>
+            <!--<p hidden id="StatusMessage">User is already authenticated</p>-->
+            <img id="AlbumImage" crossorigin="anonymous" src="https://i.scdn.co/image/ab67616d0000b273fc1bc1cf80c431c2bdbde601" alt="Album Image", width=80%>
+        </div>
+        </div>
+        
+    </body>
+</html>

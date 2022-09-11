@@ -1,0 +1,13 @@
+.menu {
+    transition: opacity 1.5s ease-in-out;
+}
+
+.background {
+    transition: opacity 4s ease-in-out;
+}
+
+.backk {
+    width: 100%;
+    border: 1px solid red;
+}
+
